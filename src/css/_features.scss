@@ -1,0 +1,48 @@
+.features {
+    position: relative;
+    padding-top: 1000px;
+
+    .wave {
+        height: 120%;
+        background-image: url("../img/wave2.png");
+        top: 800px;
+    }
+
+    .features-container {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        gap: 20vw;
+        margin-top: 100px;
+
+        p {
+            max-width: 325px;
+        }
+
+        &:nth-of-type(2) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media (max-width: map-get($breakpoints, "lg")) {
+    .feature {
+        gap: 50px !important;
+        img {
+            height: 150px;
+        }
+    }
+}
+
+@media (max-width: map-get($breakpoints, "md")) {
+    .feature {
+        flex-direction: column-reverse !important;
+        margin-top: 50px !important;
+    }
+}

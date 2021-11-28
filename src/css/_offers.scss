@@ -1,0 +1,61 @@
+.offers {
+    position: relative;
+    padding-top: 1350px;
+    text-align: center;
+
+    .wave {
+        height: 100%;
+        width: 100%;
+        background-image: url("../img/wave3.png");
+        top: 1000px;
+    }
+
+    .offers-container {
+        margin-top: 200px;
+    }
+
+    .offers-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin-top: 100px;
+    }
+
+    .offer {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            padding: 0;
+
+            ion-icon {
+                margin-right: 10px;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+        button {
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: map-get($breakpoints, "xl")) {
+    .offers {
+        padding-top: 1100px;
+    }
+
+    .offers-card-container {
+        flex-direction: column;
+        gap: 70px !important;
+        margin-top: 10px !important;
+    }
+}

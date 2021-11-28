@@ -1,0 +1,47 @@
+.download {
+    position: relative;
+    padding-top: 1300px;
+    padding-bottom: -1200px;
+    text-align: center;
+
+    .wave {
+        height: 50%;
+        width: 100%;
+        background-image: url("../img/wave4.png");
+        top: 1000px;
+    }
+
+    .download-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 400px;
+        margin-top: 100px;
+
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+
+            .links-container {
+                display: flex;
+                gap: 40px;
+
+
+                a {
+                    color: white;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: map-get($breakpoints, "md")) {
+    .download-container {
+        flex-direction: column-reverse;
+        gap: 20px !important;
+    }
+}
